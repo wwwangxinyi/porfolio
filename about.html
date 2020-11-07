@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>About</title>
+    <!-- <script src='p_js/jquery-3.1.1.min.js'></script> -->
+    <script src='js/js.js'></script>
+    <link rel="shortcut icon" href="img/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common_style.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/about_style.css" media="screen" title="no title">
+    <!-- <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+  </head>
+  <body>
+    <header class="header_fixed">
+      <a href="index.html">
+        <img class='home_img' src="img/index/home.png" alt="home" />
+      </a>
+        <img onclick="show_nav()" class="nav_icon" src="img/index/nav_icon.png" alt="nav_icon" />
+      <nav class="nav_hidden">
+        <ul>
+          <li><a href="about.html" class="highlight">about</a></li>
+          <li><a href="project.html">Project</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="photography.html">Photography</a></li>
+        </ul>
+      </nav>
+      <div class="full" id='full' onclick='show_page()'>
+        <ul>
+          <li><a href="about.html">about</a></li>
+          <li><a href="project.html">Project</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="photography.html">Photography</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="main">
+      <div class="container">
+        <h1>About</h1>
+        <div class="bios">
+          <h2>Bios</h2>
+          <p>Xinyi Wang currently enrolls in the Project Master of Science in Information in University of Michigan, Ann Arbor, with specialisation in user experience design. She is also a senior student that pursues her Bachelor of Electronic and Computer Engneering in Shanghai Jiao Tong University, China. She has completed several project experience in C++, Matlab, Python, Vivado and HTML&CSS.  With strong passion and curiousness in the User Experience Design, she continues her learning in the subjects of use interface design, contextual interview and other related areas.</p>
+        </div>
+        <div class="resume">
+          <h2>Resume</h2>
+          <p>Click link to view resume</p> 
+        </div>
+        <div class="contact">
+          <h2>Contact me</h2>
+          <p>Base: Shanghai, China</p>
+          <p>Tele: (+86) 18621126796</p>
+          <p>Email: wwwxinyi@umich</p>
+          <p>Github: <a>https://github.com/wwwangxinyi</a></p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <hr>
+      <span id='message'>My life is my message.</span>
+      <span id='copyright'>Self Designed and Coded <br>
+        &copy;&nbsp;Xinyi Wang 2020</span>
+    </footer>
+  </body>
+</html>

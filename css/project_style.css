@@ -1,0 +1,42 @@
+/* projects */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 30px 0;
+
+  }
+  
+.flex-item {
+    /* background-color: skyblue; */
+    padding: 30px;
+    flex: 100%;
+    flex-basis: 400px;
+    text-align: center;
+    /* border:1px solid khaki; */
+}
+
+.image{
+    display: block;
+    width: 60%;
+    margin:0 auto;
+}
+.image:hover{
+    transition: opacity .6s ease;
+}
+
+@media screen and (min-width: 600px) {
+    h1{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .intro{
+        grid-row: 1;
+        grid-column: 2;
+    }
+}
+@media screen and (min-width:700px) {
+    .flex-item {
+        flex: 50%;
+    }
+}

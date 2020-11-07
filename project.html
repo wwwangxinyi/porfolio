@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Projects</title>
+    <!-- <script src='p_js/jquery-3.1.1.min.js'></script> -->
+    <script src='js/js.js'></script>
+    <link rel="shortcut icon" href="img/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common_style.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/project_style.css" media="screen" title="no title">
+    <!-- <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+  </head>
+  <body>
+    <header class="header_fixed">
+      <a href="index.html">
+        <img class='home_img' src="img/index/home.png" alt="home" />
+      </a>
+        <img onclick="show_nav()" class="nav_icon" src="img/index/nav_icon.png" alt="nav_icon" />
+      <nav class="nav_hidden">
+        <ul>
+          <li><a href="about.html">about</a></li>
+          <li><a href="Project.html" class="highlight">Project</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="photography.html">Photography</a></li>
+        </ul>
+      </nav>
+      <div class="full" id='full' onclick='show_page()'>
+        <ul>
+          <li><a href="about.html">about</a></li>
+          <li><a href="project.html">Project</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="photography.html">Photography</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="main">
+      <div class="container">
+        <h1>Projects</h1>
+        <div class="intro">
+          <p>Four years' study in Shanghai Jiao Tong University brough Xinyi about various experience in Projectming. The topic of the project various from AI, data analysis, computer structure design, application development, and etc. </p>
+        </div>
+      </div>
+      <div id="projects" class='flex-container'>
+        <div class="flex-item">
+          <img src="img/project/laboratory.png" alt="AI project" class="image">
+          <div class="overlay">
+            <h2>AI-enabled all-stack and high-throughput screening system for cervical cancer</h2>
+            <p class="keyword">Artificial Intelligence, Cervical Cancer, Python</p>
+            <p class="distription">An AI-based detection and diagnosis algorithms is designed to suit for cervical cell images from various sources. </p>
+          </div>
+        </div>
+        <div class="flex-item">
+          <img src="img/project/robotic.png" alt="AI project" class="image">
+          <div class="overlay">
+            <h2>Family Care Robort</h2>
+            <p class="keyword">Full-stack development, UX design, Graduation Project</p>
+            <p class="distription">A robot is designed to meet the requirement of the elderly people, providing functions: automatic tracking, health schedule remainder, health data recording.</p>
+          </div>
+        </div>
+        <div class="flex-item">
+          <img src="img/project/analysis.png" alt="AI project" class="image">
+          <div class="overlay">
+            <h2>Smart Passive Gait Retraining System</h2>
+            <p class="keyword">Data analysis, Matlab</p>
+            <p class="distription">Customerized gait retaining system is designed for each patient based on their weely monitor gait pressure data.</p>
+          </div>
+        </div>
+        <div class="flex-item">
+          <img src="img/project/chip.png" alt="AI project" class="image">
+          <div class="overlay">
+            <h2>Computer Structure Design</h2>
+            <p class="keyword">Vivado prpgramming, Computer Composition</p>
+            <p class="distription">A simple computer is constructed through Vivado, enabling functions such as calculation, data storage.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <hr>
+      <span id='message'>My life is my message.</span>
+      <span id='copyright'>Self Designed and Coded <br>
+        &copy;&nbsp;Xinyi Wang 2020</span>
+    </footer>
+  </body>
+</html>

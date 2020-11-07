@@ -1,0 +1,26 @@
+.design{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.design img{
+    width: 100%;
+}
+.design h2{
+    text-align: center;
+}
+.flex-item{
+    flex:1;
+}
+@media screen and (min-width:1000px){
+    .design{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .design img{
+        width: 90%;
+    }
+}

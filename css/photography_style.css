@@ -1,0 +1,47 @@
+/* masonry */
+.masonry {
+    -moz-column-count:3; /* Firefox */
+    -webkit-column-count:3; /* Safari 和 Chrome */
+    column-count:3;
+    -moz-column-gap: 2em;
+    -webkit-column-gap: 2em;
+    column-gap: 2em;
+    width: 100%;
+    margin:2em auto;
+}
+
+.item {
+    /* padding-bottom: 0.5em; */
+    margin-bottom: 2em;
+    -moz-page-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    break-inside: avoid;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.item img{
+    width: 100%;
+}
+.item div{
+    text-align: center;
+    line-height: 200%;
+    padding: 5px 0;
+}
+.item span{
+    color: gray;
+    padding: 0 5px;
+}
+
+@media screen and (max-width: 1000px) {
+    .masonry {
+        column-count: 2; 
+    }
+}
+@media screen and (max-width: 500px) {
+    .main{
+        margin: 100px 10% 60px 10%;
+    }
+    .masonry {
+        column-count: 1; 
+    }
+}
