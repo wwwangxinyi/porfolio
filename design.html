@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Projects</title>
@@ -13,12 +13,12 @@
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
   </head>
   <body>
-    <header class="header_fixed">
+    <header class="header_fixed" role="banner">
       <a href="index.html">
         <img class='home_img' src="img/index/home.png" alt="home" />
       </a>
         <img onclick="show_nav()" class="nav_icon" src="img/index/nav_icon.png" alt="nav_icon" />
-      <nav class="nav_hidden">
+      <nav class="nav_hidden" role="navigation">
         <ul>
           <li><a href="about.html">about</a></li>
           <li><a href="Project.html" >Project</a></li>
@@ -28,14 +28,14 @@
       </nav>
       <div class="full" id='full' onclick='show_page()'>
         <ul>
-          <li><a href="about.html">about</a></li>
+          <li><a href="about.html" >about</a></li>
           <li><a href="project.html">Project</a></li>
           <li><a href="design.html">Design</a></li>
           <li><a href="photography.html">Photography</a></li>
         </ul>
       </div>
     </header>
-    <div class="main">
+    <div class="main" role="main">
       <div class="container">
         <h1>Design</h1>
         <div class="intro">
@@ -44,26 +44,26 @@
       </div>
       <div class="design">
         <div class="flex-item">
-          <img src="img/design/oasis.png">
           <div class="text">
             <h2>Oasis Music Festival Key Vision Design</h2>
           </div>
+          <img src="img/design/oasis.png" alt="oasis music festival key vision design">
         </div>
         <div class="flex-item">
-          <img src="img/design/music.jpg">
           <div class="text">
             <h2>ABOVE US ONLY SKY - Cross Campus Music Concert Key Vision Design</h2>
+            <img src="img/design/music.jpg" alt="ABOVE US ONLY SKY - Cross Campus Music Concert Key Vision Design">
           </div>
         </div>
         <div class="flex-item">
-          <img src="img/design/interface_design.png">
           <div class="text">
             <h2>Family Care Robot Interface Design</h2>
           </div>
+          <img src="img/design/interface_design.png" alt="Family Care Robot Interface Design">
         </div>
       </div>
     </div>
-    <footer>
+    <footer role="contentinfo">
       <hr>
       <span id='message'>My life is my message.</span>
       <span id='copyright'>Self Designed and Coded <br>

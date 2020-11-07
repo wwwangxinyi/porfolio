@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Xinyi's Portfolio</title>
@@ -13,12 +13,12 @@
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
   </head>
   <body>
-    <header class="index_header">
+    <header class="index_header" role="banner">
       <a href="index.html">
         <img class='home_img' src="img/index/home.png" alt="home" />
       </a>
         <img onclick="show_nav()" id="index_nav_icon" src="img/index/nav_icon.png" alt="nav_icon" />
-      <nav id="nav_hover">
+      <nav id="nav_hover" role="navigation">
         <ul>
           <li><a href="about.html">about</a></li>
           <li><a href="prject.html">Project</a></li>
@@ -35,24 +35,26 @@
         </ul>
       </div>
     </header>
-    <div id="index_main">
+    <div id="index_main" role="main">
       <div id="left"></div>
       <div id="right">
         <div id="text_box">
-          <p id="hello">Hello : )</p>
-          <p>I'm </p>
-          <p><a href="about.html"><b>Xinyi</b></a></p>
+          <h3 id="hello">Hello : )</h3>
+          <h3>I'm </h3>
+          <h2><a href="about.html"><b>Xinyi</b></a></h2>
           <br />
-          <p>Multi-Language</p>
-          <p><a href="project.html"><b>Programmer</b></a><br></p>
+          <h3>Multi-Language</h3>
+          <h2><a href="project.html"><b>Programmer</b></a><br></h2>
           <br />
-          <p>Fresh</p>
-          <p><a href="design.html"><b>Designer</b></a><br></p>
+          <h3>Fresh</h3>
+          <h2><a href="design.html"><b>Designer</b></a><br></h2>
           <br />
-          <p>and</p>
-          <p><a href="photography.html"><b>More</b></a></p>
+          <h3>and</h3>
+          <h2><a href="photography.html"><b>More</b></a></h2>
         </div>
       </div>
     </div>
   </body>
+  <footer  role="contentinfo">
+  </footer>
 </html>
