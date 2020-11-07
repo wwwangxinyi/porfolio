@@ -178,7 +178,7 @@ hr{
     }
     .nav_hidden a{
         text-decoration: none;
-        color: grey;
+        color: #575757;
         text-transform: uppercase;
     }
     .nav_hidden a:hover{
