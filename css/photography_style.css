@@ -54,7 +54,7 @@ img{
 
 
 .item:hover .overlay{
-    opacity: 1;
+    opacity: .9;
 }
 
 @media screen and (max-width: 1000px) {
