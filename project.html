@@ -13,6 +13,7 @@
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
   </head>
   <body>
+    <div class="skip"><a href="#main-to-skip">Skip to Main Content</a></div>
     <header class="header_fixed"role="banner">
       <a href="index.html">
         <img class='home_img' src="img/index/home.png" alt="home" />
@@ -20,26 +21,26 @@
         <img onclick="show_nav()" class="nav_icon" src="img/index/nav_icon.png" alt="nav_icon" />
       <nav class="nav_hidden" role="navigation">
         <ul>
-          <li><a href="about.html">about</a></li>
-          <li><a href="Project.html" class="highlight">Project</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="project.html" class="highlight">Project</a></li>
           <li><a href="design.html">Design</a></li>
           <li><a href="photography.html">Photography</a></li>
         </ul>
       </nav>
       <div class="full" id='full' onclick='show_page()'>
         <ul>
-          <li><a href="about.html">about</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="project.html">Project</a></li>
           <li><a href="design.html">Design</a></li>
           <li><a href="photography.html">Photography</a></li>
         </ul>
       </div>
     </header>
-    <div class="main" role="main">
+    <div id="main-to-skip" class="main" role="main">
       <div class="container">
         <h1>Projects</h1>
         <div class="intro">
-          <p>Four years' study in Shanghai Jiao Tong University brough Xinyi about various experience in Projectming. The topic of the project various from AI, data analysis, computer structure design, application development, and etc. </p>
+          <p>Four years' study at Shanghai Jiao Tong University brought Xinyi about various experiences in programming. The topics of the project vary from Artificial Intelligence, Data Analysis, Computer Structure Design, Mobile App Development, etc. </p>
         </div>
       </div>
       <div id="projects" class='flex-container'>
@@ -48,7 +49,7 @@
           <div class="overlay">
             <h2>AI-enabled all-stack and high-throughput screening system for cervical cancer</h2>
             <p class="keyword">Artificial Intelligence, Cervical Cancer, Python</p>
-            <p class="distription">An AI-based detection and diagnosis algorithms is designed to suit for cervical cell images from various sources. </p>
+            <p class="distription">AI-based detection and diagnosis algorithms are designed to suit cervical cell images from various sources. </p>
           </div>
         </div>
         <div class="flex-item">
@@ -56,7 +57,7 @@
           <div class="overlay">
             <h2>Family Care Robort</h2>
             <p class="keyword">Full-stack development, UX design, Graduation Project</p>
-            <p class="distription">A robot is designed to meet the requirement of the elderly people, providing functions: automatic tracking, health schedule remainder, health data recording.</p>
+            <p class="distription">A robot is designed to meet the requirement of the elderly, providing functions: automatic tracking, health schedule remainder, health data recording.</p>
           </div>
         </div>
         <div class="flex-item">
@@ -64,7 +65,7 @@
           <div class="overlay">
             <h2>Smart Passive Gait Retraining System</h2>
             <p class="keyword">Data analysis, Matlab</p>
-            <p class="distription">Customerized gait retaining system is designed for each patient based on their weely monitor gait pressure data.</p>
+            <p class="distription">A customized gait retaining system is designed for each patient based on their weekly monitor gait pressure data.</p>
           </div>
         </div>
         <div class="flex-item">

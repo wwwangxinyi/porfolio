@@ -1,6 +1,3 @@
-// function show_nav_header(){
-//     document.getElementById('nav_hover').style.display='inline';
-// }
 
 function show_nav(){
     document.getElementById('full').style.opacity='1';

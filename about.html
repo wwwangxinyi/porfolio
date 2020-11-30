@@ -5,14 +5,38 @@
     <title>About</title>
     <!-- <script src='p_js/jquery-3.1.1.min.js'></script> -->
     <script src='js/js.js'></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+          emailjs.init('user_vgE1HxpXzPgc9U9CFR8AO');
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function() {
+          document.getElementById('contact-form').addEventListener('submit', function(event) {
+              event.preventDefault();
+              // generate a five digit number for the contact_number variable
+              this.contact_number.value = Math.random() * 100000 | 0;
+              // these IDs from the previous steps
+              emailjs.sendForm('service_e1lv3nt', 'template_b1d4813', this)
+                  .then(function() {
+                      console.log('SUCCESS!');
+                  }, function(error) {
+                      console.log('FAILED...', error);
+                  });
+          });
+      }
+    </script>
+
+
     <link rel="shortcut icon" href="img/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/common_style.css" media="screen" title="no title">
     <link rel="stylesheet" href="css/about_style.css" media="screen" title="no title">
-    <!-- <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title"> -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
   </head>
   <body>
+    <div class="skip"><a href="#main-to-skip">Skip to Main Content</a></div>
     <header class="header_fixed" role="banner">
       <a href="index.html">
         <img class='home_img' src="img/index/home.png" alt="home" />
@@ -20,7 +44,7 @@
         <img onclick="show_nav()" class="nav_icon" src="img/index/nav_icon.png" alt="nav_icon" />
       <nav class="nav_hidden" role="navigation">
         <ul>
-          <li><a href="about.html" class="highlight">about</a></li>
+          <li><a href="about.html" class="highlight">About</a></li>
           <li><a href="project.html">Project</a></li>
           <li><a href="design.html">Design</a></li>
           <li><a href="photography.html">Photography</a></li>
@@ -28,30 +52,38 @@
       </nav>
       <div class="full" id='full' onclick='show_page()'>
         <ul>
-          <li><a href="about.html">about</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="project.html">Project</a></li>
           <li><a href="design.html">Design</a></li>
           <li><a href="photography.html">Photography</a></li>
         </ul>
       </div>
     </header>
-    <div class="main" role="main">
+    <div id="main-to-skip" class="main" role="main">
       <div class="container">
         <h1>About</h1>
         <div class="bios">
           <h2>Bios</h2>
-          <p>Xinyi Wang currently enrolls in the Project Master of Science in Information in University of Michigan, Ann Arbor, with specialisation in user experience design. She is also a senior student that pursues her Bachelor of Electronic and Computer Engneering in Shanghai Jiao Tong University, China. She has completed several project experience in C++, Matlab, Python, Vivado and HTML&CSS.  With strong passion and curiousness in the User Experience Design, she continues her learning in the subjects of use interface design, contextual interview and other related areas.</p>
+          <p>Xinyi Wang currently enrolls in the Project Master of Science in Information at the University of Michigan, Ann Arbor, with a specialization in user experience design. She is also a senior student that pursues her Bachelor of Electronics and Computer Engineering at Shanghai Jiao Tong University, China. Xinyi has completed several project experience in C++, Matlab, Python, Vivado, and HTML&CSS. With strong passion and curiousness in User Experience Design, she continues her learning in the areas of user interface design, contextual interview, and other related areas.</p>
         </div>
         <div class="resume">
           <h2>Resume</h2>
-          <p>Click link to view resume</p> 
+          <p>Click link to view <a href="">resume</a></p> 
         </div>
         <div class="contact">
           <h2>Contact me</h2>
           <p>Base: Shanghai, China</p>
           <p>Tele: (+86) 18621126796</p>
           <p>Email: wwwxinyi@umich</p>
-          <p>Github: <a>https://github.com/wwwangxinyi</a></p>
+          <p>Github: <a href="https://github.com/wwwangxinyi">https://github.com/wwwangxinyi</a></p>
+
+          <form id="contact-form">
+            <input type="hidden" name="contact_number">
+            <input type="text" name="user_name" placeholder="NAME">
+            <input type="email" name="user_email" placeholder="EMAIL">
+            <input name="message" placeholder="MESSAGE">
+            <input id="submit" type="submit" value="Send">
+          </form>
         </div>
       </div>
     </div>

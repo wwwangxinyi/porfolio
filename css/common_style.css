@@ -28,7 +28,9 @@ vertical-align: middle;
     -moz-box-sizing: border-box;
         box-sizing: border-box;
 }
-  
+*:focus{
+    border: 2px solid #66ccff;
+}
 /* header style */
 header{
 background-color: white;
@@ -107,6 +109,28 @@ transition: height 0.3s;
     color: black;
     border-bottom: black 1px solid;
 }
+/* skip */
+.skip a {
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 100;
+  
+    /*Your code here*/
+    position: absolute;
+    top: -40px;
+  }
+  
+  /*Your Code Here*/
+  /*Write selector/rule property to position the skip class element*/
+  
+  .skip a:focus {
+    position: absolute;
+    top: 0px;
+  }
+  
 /* main */
 .main{
     margin: 100px 15% 60px 15%;
@@ -201,7 +225,7 @@ hr{
     }
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media screen and (prefers-reduced-motion: reduce) { 
     .animation {
       animation: none;
     }
