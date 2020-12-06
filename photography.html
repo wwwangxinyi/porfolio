@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PN032275DE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-PN032275DE');
+  </script>
   <meta charset="utf-8">
   <title>Photography</title>
   <script src='js/js.js'></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js" crossorigin="anonymous"></script>
-	<script type="text/javascript" defer>
-		if (WebFont) {
-			WebFont.load({
-				google: {
-					families: ["Roboto:400,900", "Open Sans:300,400,800,800italic,400italic"]
-				}
-			});
-		}
-	</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" defer>
+    if (WebFont) {
+      WebFont.load({
+        google: {
+          families: ["Roboto:400,900", "Open Sans:300,400,800,800italic,400italic"]
+        }
+      });
+    }
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Lazy load image with blurry effect as seen on Medium">
-	<meta property="og:url" content="https://lourfield.github.io/element-queries/" />
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Isometric Layout Demo - Web Design Tuts+" />
-	<meta property="og:description"
-		content="An isometric grid layout with 3D transformations. Inspired from Envato Elements" />
-	<meta property="og:image" content="https://tfirdaus.github.io/inline-sharing-button/images/office-4.jpg" />
+  <meta property="og:url" content="https://lourfield.github.io/element-queries/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Isometric Layout Demo - Web Design Tuts+" />
+  <meta property="og:description"
+    content="An isometric grid layout with 3D transformations. Inspired from Envato Elements" />
+  <meta property="og:image" content="https://tfirdaus.github.io/inline-sharing-button/images/office-4.jpg" />
   <link rel="stylesheet" href="css/common_style.css" media="screen" title="no title">
   <link rel="stylesheet" href="css/photography_style.css" media="screen" title="no title">
 </head>
+
 <body>
   <div class="skip"><a href="#main-to-skip">Skip to Main Content</a></div>
   <header class="header_fixed" role="banner">
@@ -54,7 +68,8 @@
     <div class="container">
       <h1>Photography</h1>
       <div class="intro">
-        <p>Having great enthusiasm for photography and tourism, I would like to discover every corner of the world and reach out to you : )</p>
+        <p>Having great enthusiasm for photography and tourism, I would like to discover every corner of the world and
+          reach out to you : )</p>
       </div>
     </div>
     <div class="demo-content" id="content">
@@ -111,7 +126,7 @@
             </div>
           </div>
         </div>
-  
+
         <div class="column">
           <div class="ItemCard">
             <figure class="ItemCard__thumb">
@@ -125,7 +140,7 @@
             </div>
           </div>
         </div>
-  
+
         <div class="column">
           <div class="ItemCard">
             <figure class="ItemCard__thumb">
@@ -165,7 +180,7 @@
             </div>
           </div>
         </div>
-  
+
         <div class="column">
           <div class="ItemCard">
             <figure class="ItemCard__thumb">
@@ -179,7 +194,7 @@
             </div>
           </div>
         </div>
-  
+
         <div class="column">
           <div class="ItemCard">
             <figure class="ItemCard__thumb">
@@ -193,7 +208,7 @@
             </div>
           </div>
         </div>
-  
+
         <div class="column">
           <div class="ItemCard">
             <figure class="ItemCard__thumb">
@@ -207,7 +222,7 @@
             </div>
           </div>
         </div>
-  
+
         <div class="column">
           <div class="ItemCard">
             <figure class="ItemCard__thumb">
@@ -279,18 +294,18 @@
       (function () {
         $(document)
           .on("mousemove", ".ItemCard", function (event) {
-  
+
             var halfW = (this.clientWidth / 2);
             var halfH = (this.clientHeight / 2);
-  
+
             var coorX = (halfW - (event.pageX - this.offsetLeft));
             var coorY = (halfH - (event.pageY - this.offsetTop));
-  
+
             var degX = ((coorY / halfH) * 10) + 'deg'; // max. degree = 10
             var degY = ((coorX / halfW) * -10) + 'deg'; // max. degree = 10
-  
+
             $(this).css('transform', function () {
-  
+
                 return 'perspective( 600px ) translate3d( 0, -2px, 0 ) scale(1.1) rotateX(' + degX +
                   ') rotateY(' + degY + ')';
               })
@@ -307,7 +322,7 @@
           });
       })();
     </script>
-  
+
 
 
     <!-- masonry layout -->
