@@ -15,7 +15,9 @@
     bottom: 0;
     z-index: -1;
     opacity: 1;
-    background-color: #66ccff;
+    background-image: url('../img/index/background.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
     -webkit-transition: .5s ease;
     transition: .5s ease;
 }
