@@ -1,4 +1,4 @@
-.bios {
+#bios {
     grid-row: 2;
     grid-column: 1/ span 2;
 }
@@ -9,7 +9,7 @@
 
 }
 
-.contact {
+#contact {
     grid-row: 4;
     grid-column: 1/ span 2;
 }
@@ -76,18 +76,18 @@ label{
         grid-row: 1/ span 2;
     }
 
-    .bios {
+    #bios {
         grid-row: 1;
         grid-column: 2;
     }
 
-    .resume {
+    #resume {
         grid-row: 2;
         grid-column: 2;
 
     }
 
-    .contact {
+    #contact {
         grid-row: 3;
         grid-column: 2;
     }
