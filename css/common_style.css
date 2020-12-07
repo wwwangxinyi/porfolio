@@ -223,7 +223,9 @@ hr{
 }
 
 @media screen and (prefers-reduced-motion: reduce) { 
-    .animation {
-      animation: none;
+    .skip{
+        animation: none;
+        position: absolute;
+        top: 0px;
     }
-  }
+}
